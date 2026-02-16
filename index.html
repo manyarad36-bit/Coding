@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Places Address Book</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Places You've Been to</h1>
+
+    <form id="place-form">
+      <input type="text" id="place-name" placeholder="Place Name" required>
+
+      <input
+        type="text"
+        id="place-location"
+        placeholder="City / Country"
+        required
+      >
+
+      <input
+        type="text"
+        id="time-of-year"
+        placeholder="Time of Year (e.g. Summer, Fall)"
+        required
+      >
+
+      <button type="submit" class="add-place-btn">Add Place</button>
+    </form>
+
+  
+    <ul id="place-list"></ul>
+    <div id="place-details"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
